@@ -22,3 +22,5 @@ Public Class Form1
         Label1.Text = ""
     End Sub
 End Class
+
+Note : Menggunakan 2 label, 2 Button, dan 1 TextBox
