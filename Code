@@ -1,0 +1,24 @@
+Public Class Form1
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim A, i, Angka As Integer
+        Angka = TextBox1.Text
+        A = 1
+        For i = 1 To Angka
+            A = A * i
+        Next i
+        Label1.Text = Angka & "! = "
+        For i = Angka To 1 Step -1
+            If i = 1 Then
+                Label1.Text = Label1.Text & i & " = " & A
+            Else
+                Label1.Text = Label1.Text & i & " * "
+            End If
+        Next i
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        TextBox1.Text = ""
+        Label1.Text = ""
+    End Sub
+End Class
