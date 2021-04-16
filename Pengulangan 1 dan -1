@@ -1,0 +1,16 @@
+Public Class Form1
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim n As Integer
+        Dim i As Integer
+        Dim bil As Integer
+        n = TextBox1.Text
+        bil = -1
+        For i = 1 To n
+            bil = -1 * bil
+            ListBox1.Items.Add(bil)
+        Next
+    End Sub
+End Class
+
+Note : Menggunakan 1 ListBox, 1 TextBox, 1 Label, dan 1 Button
